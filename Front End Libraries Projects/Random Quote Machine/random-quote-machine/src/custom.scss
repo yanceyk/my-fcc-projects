@@ -1,0 +1,141 @@
+@use "sass:color";
+@import "../node_modules/bootstrap/scss/functions";
+
+
+// Variables
+
+$body-color: white;
+$body-prefix: body-bg-;
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+$font-family-base: "PT Serif", serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Generate palettes for background colors from full colors, grays, and theme colors.
+:root {
+  @each $color, $value in $colors {
+    --#{$body-prefix}#{$color}: #{$value};
+  }
+  --bs-body-bg: var(--body-bg-blue);
+  --bs-body-color: var(--body-bg-blue);
+  --bs-body-font-family: $font-family-base;
+  --bs-body-font-size: 1.25rem;
+}
+
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+a {
+    color: $body-color;
+    text-decoration: none;
+
+    &:hover,
+    &:visited {
+        color: $body-color;
+    }
+}
+
+.container-fluid#root {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.btn,
+.btn-primary {
+  color: $body-color;
+  background-color: var(--bs-body-bg);
+  border-color: var(--bs-body-bg);
+
+  &:hover,
+  &.btn-primary:hover {
+    // color: $body-color;
+    text-decoration: if($link-hover-decoration == underline, none, null);
+    background-color: var(--bs-body-bg);
+    border-color: var(--bs-body-bg);
+  }
+
+  .btn-check:focus + &,
+  &:focus,
+  &.btn-primary:focus {
+    outline: 0;
+    box-shadow: $btn-focus-box-shadow;
+    background-color: var(--bs-body-bg);
+    border-color: var(--bs-body-bg);
+  }
+
+  .btn-check:checked + &,
+  .btn-check:active + &,
+  &:active,
+  &.active,
+  &.btn-primary:active {
+    @include box-shadow($btn-active-box-shadow);
+    background-color: var(--bs-body-bg);
+    border-color: var(--bs-body-bg);
+
+    &:focus,
+    &.btn-primary:focus {
+      @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+      background-color: var(--bs-body-bg);
+      border-color: var(--bs-body-bg);
+    }
+  }
+
+  &:disabled,
+  &.disabled,
+  fieldset:disabled & {
+    pointer-events: none;
+    opacity: $btn-disabled-opacity;
+    @include box-shadow(none);
+  }
+}
+
+//
+// Link buttons
+//
+
+// Make a button look and behave like a link
+.btn-link {
+  font-weight: $font-weight-normal;
+  color: $btn-link-color;
+  text-decoration: $link-decoration;
+
+  &:hover {
+    color: $btn-link-hover-color;
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:focus {
+    text-decoration: $link-hover-decoration;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $btn-link-disabled-color;
+  }
+
+  // No need for an active state here
+}
+
+#quote-box {
+  background-color: $body-color;
+  max-width: 540px;
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+
+  & #text {
+    line-height: 1.3;
+    font-style: italic;
+  }
+}
