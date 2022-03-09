@@ -12,7 +12,7 @@ More details about each project are located in the root folder's [readme.md](Res
 5. Build a Personal Portfolio Page
 
 ## JavaScript Algorithms and Data Structures
-1. Palindrome Checker
+1. [Palindrome Checker](JavaScript%20Algorithms%20and%20Data%20Structures/Palindrome%20Checker#readme)
 2. Roman Numeral Converter
 3. Caesars Cipher
 4. Telephone Number Validator
