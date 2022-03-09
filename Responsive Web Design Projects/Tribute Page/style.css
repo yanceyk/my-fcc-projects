@@ -1,0 +1,103 @@
+html {
+  font-size: 10px;
+  }
+
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  text-align: center;
+  color: darkslategray;
+  background-color: #f9f9f9;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+p {
+    line-height: 2.4rem;
+}
+
+#title {
+  font-size: 4rem;
+  font-family: 'Delius Swash Caps', cursive;
+}
+
+@media (max-width: 768px) {
+    #title {
+        font-size: 3.2rem;
+    }
+}
+
+#main {
+  padding: 2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    line-height: 4.8rem;
+}
+
+#img-div {
+margin: 0 auto;
+background-color: white;
+padding: 1.5rem;
+border-radius: 5px;
+}
+
+#image {
+max-width: 100%;
+display: block;
+height: auto;
+margin-bottom: 1.5rem;
+border-radius: 5px;
+box-shadow: 0 0 0.75em rgba(47, 79, 79, 0.3);
+}
+
+#img-caption {
+font-size: 1.4rem;
+}
+
+#tribute-info {
+font-size: 1.8rem;
+margin-top: 2.4;
+max-width: 80%;
+margin: 0 auto;
+}
+
+ul {
+    text-align: left;
+    line-height: 2.5rem;
+}
+
+li {
+    margin-bottom: 1.5rem;
+    list-style: none;
+}
+
+blockquote {
+    max-width: 70%;
+    margin: 0 auto;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 2.5rem;
+    border-left: 2px solid slategray;
+}
+
+blockquote p {
+    margin-left: 1.5rem;
+}
+
+#tribute-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}

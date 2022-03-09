@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-header">
+        <h1 id="title">Registration Form</h1>
+        <p id="description">Save your spot for this year's Family Reunion. <br> <span class="text_small">You must be 18
+                or older to submit this
+                form.</span></p>
+    </div>
+
+    <form id="survey-form">
+        <label for="name" id="name-label">Full Name:</label>
+        <input type="text" id="name" placeholder="First and last name" required>
+
+        <label for="email" id="email-label">Email Address:</label>
+        <input type="email" id="email" placeholder="you@domain.com" required>
+
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" id="number" placeholder="Age" min="18" max="110" required>
+
+        <label for="dropdown" id="dropdown-label">Registration Type:</label>
+        <select name="dropdown" id="dropdown">
+            <option>Individual</option>
+            <option selected>Couple</option>
+            <option>Family</option>
+        </select>
+
+        <label for="payment">How do you plan to pay?</label>
+        <label><input type="radio" value="advanced" name="payment">In Advance</label>
+        <label><input type="radio" value="onsite" name="payment">At the Door</label>
+
+        <fieldset class="activity">
+            <legend>Choose your activities</legend>
+            <label><input type="checkbox" name="activity" value="tour">Riverboat Tour</label>
+            <label><input type="checkbox" name="activity" value="kickball">Kickball Game</label>
+            <label><input type="checkbox" name="activity" value="horeshoe">Horseshoe Tournament</label>
+            <label><input type="checkbox" name="activity" value="paddleboat">Paddleboat Tour</label>
+        </fieldset>
+
+        <label for="comments">Anything else?</label>
+        <textarea name="comments" placeholder="To register guests, enter their full name and age. Separate multiple guests with a semicolon (;)." maxlength="500" minlength="50"></textarea>
+
+        <input type="submit" id="submit" value="Register">
+    </form>
+</body>
+
+</html>
