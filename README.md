@@ -5,7 +5,7 @@ I take these courses to hone my current skills, expand my skillset, learn new sk
 ## Responsive Web Design Projects
 These projects demonstrate simple, but responsive, single-page websites. The freeCodeCamp test suite is included in most projects to determine if the project passed the requirements (user stories).
 More details about each project are located in their respective folder's readme.md file.
-1. [Build a Tribute Page](Responsive Web Design Projects#readme.md)
+1. Build a Tribute Page
 2. Build a Survey Form
 3. Build a Product Landing Page
 4. Build a Technical Documentation Page
