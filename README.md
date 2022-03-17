@@ -19,7 +19,9 @@ More details about each project are located in the root folder's [readme.md](Res
 5. [Cash Register](JavaScript%20Algorithms%20and%20Data%20Structures/Cash%20Register#readme)
 
 ## Front-End Libraries Projects
-1. [Build a Random Quote Machine](Front-End%20Libraries%Projects/Random%20Quote%20Machine)
+These projects demonstrate simple single page applications. The freeCodeCamp test suite is included in most projects to determine passing.
+More details about each project are in the root folder's [README](Front%20End%20Libraries%Projects#README.md).
+1. Build a Random Quote Machine
 2. Build a Markdown Previewer (incomplete)
 3. Build a Drum Machine (not started)
 4. Build a JavaScript Calculator (not started)
