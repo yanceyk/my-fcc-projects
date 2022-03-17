@@ -13,7 +13,7 @@ More details about each project are located in the root folder's [readme.md](Res
 
 ## JavaScript Algorithms and Data Structures
 1. [Palindrome Checker](JavaScript%20Algorithms%20and%20Data%20Structures/Palindrome%20Checker#readme)
-2. Roman Numeral Converter
+2. [Roman Numeral Converter](JavaScript%20Algorithms%20and%20Data%20Structures/Roman%20Numeral%20Converter#readme)
 3. Caesars Cipher
 4. Telephone Number Validator
 5. Cash Register
