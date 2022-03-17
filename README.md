@@ -14,12 +14,12 @@ More details about each project are located in the root folder's [readme.md](Res
 ## JavaScript Algorithms and Data Structures
 1. [Palindrome Checker](JavaScript%20Algorithms%20and%20Data%20Structures/Palindrome%20Checker#readme)
 2. [Roman Numeral Converter](JavaScript%20Algorithms%20and%20Data%20Structures/Roman%20Numeral%20Converter#readme)
-3. Caesars Cipher
-4. Telephone Number Validator
-5. Cash Register
+3. [Caesars Cipher](JavaScript%20Algorithms%20and%20Data%20Structures/Caesars%20Cipher#readme)
+4. [Telephone Number Validator](JavaScript%20Algorithms%20and%20Data%20Structures/Telephone%20Number%20Validator#readme)
+5. [Cash Register](JavaScript%20Algorithms%20and%20Data%20Structures/Cash%20Register#readme)
 
 ## Front-End Libraries Projects
-1. Build a Random Quote Machine
+1. [Build a Random Quote Machine](Front-End%20Libraries%Projects/Random%20Quote%20Machine)
 2. Build a Markdown Previewer (incomplete)
 3. Build a Drum Machine (not started)
 4. Build a JavaScript Calculator (not started)
