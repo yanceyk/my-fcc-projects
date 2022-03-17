@@ -115,19 +115,6 @@ class App extends React.Component {
     body.style.setProperty( 'background-color', color );   
   }
 
-  componentDidUpdate() {
-    /* let root = document.getElementById( 'root' );
-    let body = document.body;
-    
-    let randomColor = this.randomIndex( quoteColors );
-    let color = 'var('+randomColor+')';
-
-    root.style.setProperty( 'background-color', color );
-    root.style.setProperty( 'color', color );
-    body.style.setProperty( 'background-color', color ); */
-    
-  }
-
   newQuote() {
     let newRandomQuote = this.randomIndex( quotes );
     let randomColor = this.randomIndex( quoteColors );
@@ -137,7 +124,6 @@ class App extends React.Component {
     let body = document.body;
 
     root.style.setProperty( 'background-color', color );
-    // root.style.setProperty( 'color', color );
     body.style.setProperty( 'background-color', color );
     
     this.setState({
