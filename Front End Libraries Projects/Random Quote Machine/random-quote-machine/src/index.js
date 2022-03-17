@@ -1,4 +1,6 @@
 import "./custom.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
@@ -26,6 +28,17 @@ ReactDOM.render(
       >
         by hezag
       </a>
+      <p className="small">
+        View the full source on &nbsp;
+        <a
+          href="https://github.com/yanceyk/my-fcc-projects/tree/master/Front%20End%20Libraries%20Projects/Random%20Quote%20Machine/random-quote-machine"
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          title="View on Github"
+        >
+          <FontAwesomeIcon icon={ faGithubSquare } />
+        </a>
+      </p>
     </>
   </React.StrictMode>,
   document.getElementById("root")

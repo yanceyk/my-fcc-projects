@@ -87,6 +87,8 @@ class App extends React.Component {
     this.state = {
       quote: '',
       author: '',
+      color: '',
+      borderColor: 'unset'
     };
 
     this.newQuote = this.newQuote.bind(this);
@@ -99,37 +101,50 @@ class App extends React.Component {
 
     let root = document.getElementById( 'root' );
     let body = document.body;
+    
     let color = 'var('+randomColor+')';
     
     this.setState({
       quote: randomQuote.quote,
       author: randomQuote.author,
+      borderColor: color,
+      color: color
     });
 
-    root.style.setProperty( '--bs-body-bg', color );
-    root.style.setProperty( '--bs-body-color', color );
-    body.style.setProperty( 'background-color', color );
-    body.style.setProperty( 'color', color );
-   
+    root.style.setProperty( 'background-color', color );
+    body.style.setProperty( 'background-color', color );   
   }
 
   componentDidUpdate() {
-    let root = document.getElementById( 'root' );
+    /* let root = document.getElementById( 'root' );
     let body = document.body;
+    
     let randomColor = this.randomIndex( quoteColors );
     let color = 'var('+randomColor+')';
-    root.style.setProperty( '--bs-body-bg', color );
-    root.style.setProperty( '--bs-body-color', color );
-    body.style.setProperty( 'background-color', color );
-    body.style.setProperty( 'color', color );
+
+    root.style.setProperty( 'background-color', color );
+    root.style.setProperty( 'color', color );
+    body.style.setProperty( 'background-color', color ); */
+    
   }
 
   newQuote() {
     let newRandomQuote = this.randomIndex( quotes );
+    let randomColor = this.randomIndex( quoteColors );
+    let color = 'var('+randomColor+')';
+
+    let root = document.getElementById( 'root' );
+    let body = document.body;
+
+    root.style.setProperty( 'background-color', color );
+    // root.style.setProperty( 'color', color );
+    body.style.setProperty( 'background-color', color );
     
     this.setState({
       quote: newRandomQuote.quote,
       author: newRandomQuote.author,
+      borderColor: color,
+      color: color
     });
 
   }
@@ -139,11 +154,21 @@ class App extends React.Component {
   }
 
   render() {
+
+    const quoteStyle = {
+      color: this.state.color
+    };
+
+    const buttonStyle = {
+      backgroundColor: this.state.color,
+      borderColor: this.state.color
+    };
     
     return (
       <div
         className="container-sm d-flex flex-column justify-content-between flex-wrap p-4"
         id="quote-box"
+        style={quoteStyle}
       >
         <p id="text" className="align-self-center fs-2 text-center">
           "{this.state.quote}"
@@ -158,6 +183,7 @@ class App extends React.Component {
             href={"https://www.twitter.com/intent/tweet?text=" + this.state.quote + ' ' + this.state.author }
             target="_blank"
             rel="noopener noreferrer"
+            style={buttonStyle}
           >
             <FontAwesomeIcon icon={ faTwitter } />
           </a>
@@ -166,6 +192,7 @@ class App extends React.Component {
             className="btn text-nowrap btn-primary"
             id="new-quote"
             onClick={this.newQuote}
+            style={buttonStyle}
           >
             New Quote
           </button>

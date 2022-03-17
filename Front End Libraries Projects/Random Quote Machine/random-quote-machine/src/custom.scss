@@ -18,14 +18,14 @@ $font-family-base: "PT Serif", serif;
     --#{$body-prefix}#{$color}: #{$value};
   }
   --bs-body-bg: var(--body-bg-blue);
-  --bs-body-color: var(--body-bg-blue);
+  --bs-body-color: var(--bs-white);
   --bs-body-font-family: $font-family-base;
   --bs-body-font-size: 1.25rem;
 }
 
 body {
   background-color: var(--bs-body-bg);
-  color: var(--bs-body-color);
+  color: $body-color;
 }
 
 a {

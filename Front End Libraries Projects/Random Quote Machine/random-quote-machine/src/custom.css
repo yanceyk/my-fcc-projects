@@ -11128,14 +11128,14 @@ textarea.form-control-lg {
   --body-bg-gray: #6c757d;
   --body-bg-gray-dark: #343a40;
   --bs-body-bg: var(--body-bg-blue);
-  --bs-body-color: var(--body-bg-blue);
+  --bs-body-color: var(--bs-white);
   --bs-body-font-family: $font-family-base;
   --bs-body-font-size: 1.25rem;
 }
 
 body {
   background-color: var(--bs-body-bg);
-  color: var(--bs-body-color);
+  color: white;
 }
 
 a {
