@@ -20,7 +20,7 @@ More details about each project are located in the root folder's [readme.md](Res
 
 ## Front-End Libraries Projects
 These projects demonstrate simple single page applications. The freeCodeCamp test suite is included in most projects to determine passing.
-More details about each project are in the root folder's [README](Front%20End%20Libraries%Projects#Front-End%20Libraries%20%Projects).
+More details about each project are in the root folder's [README](Front%20End%20Libraries%20Projects#Front-End%20Libraries%20Projects).
 1. Build a Random Quote Machine
 2. Build a Markdown Previewer (incomplete)
 3. Build a Drum Machine (not started)
