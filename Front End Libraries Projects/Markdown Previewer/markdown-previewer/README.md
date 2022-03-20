@@ -4,4 +4,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 **Objective:** Build a CodePen.io app that is functionally similary to [this](https://codepen.io/freeCodeCamp/full/GrZVVO). The app must fulfill these [user stories](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-markdown-previewer) and get all tests to pass.
 
-**[View on CodePen](https://codepen.io/mrskmass/full/NWXrjYB).
+**[View on CodePen](https://codepen.io/mrskmass/full/NWXrjYB)**.
